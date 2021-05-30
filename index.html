@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- css file enqueue -->
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Roboto&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+        <link rel="stylesheet" href="css/bootstrap-icons.css" />
+
+        <!-- bootstrap cdn-->
+        <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous"> -->
+
+        <link rel="stylesheet" href="css/style.css" />
+        <title>E-School HTML Template</title>
+    </head>
+
+    <body>
+        <!-- Header -->
+        <nav id="navbar_top" class="navbar navbar-expand-lg main-navigation" id="navbar">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                	<img src="images/logo.png" alt="logo">
+                </a>
+                <button class="navbar-toggler" type="button">
+                    <span class="navbar-toggler-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-justify" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M2 12.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z"/>
+</svg>
+                    </span>
+                </button>
+                <div class="overlay d-flex d-lg-none"></div>
+                <div class="order-lg-2  d-lg-flex w-100 sidebar pb-3 pb-lg-0">
+                    <ul class="navbar-nav ms-lg-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link px-3 px-lg-2 active" aria-current="page" href="#">
+                                <svg width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-house-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M8 3.293l6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z" />
+                                    <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z" />
+                                </svg>
+                                &nbsp;Books
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-3 px-lg-2" href="#">
+                                <svg width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-briefcase-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M0 12.5A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5V6.85L8.129 8.947a.5.5 0 0 1-.258 0L0 6.85v5.65z" />
+                                    <path
+                                        fill-rule="evenodd"
+                                        d="M0 4.5A1.5 1.5 0 0 1 1.5 3h13A1.5 1.5 0 0 1 16 4.5v1.384l-7.614 2.03a1.5 1.5 0 0 1-.772 0L0 5.884V4.5zm5-2A1.5 1.5 0 0 1 6.5 1h3A1.5 1.5 0 0 1 11 2.5V3h-1v-.5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5V3H5v-.5z"
+                                    />
+                                </svg>
+                                &nbsp;Courses
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link px-3 px-lg-2 dropdown-toggle" href="#" id="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <svg width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-menu-down" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        fill-rule="evenodd"
+                                        d="M15 13V4a1 1 0 0 0-1-1h-3.586A2 2 0 0 1 9 2.414l-1-1-1 1A2 2 0 0 1 5.586 3H2a1 1 0 0 0-1 1v9a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1zM2 2a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2h-3.586a1 1 0 0 1-.707-.293L8.354.354a.5.5 0 0 0-.708 0L6.293 1.707A1 1 0 0 1 5.586 2H2z"
+                                    />
+                                    <path
+                                        fill-rule="evenodd"
+                                        d="M15 11H1v-1h14v1zm0-4H1V6h14v1zM2 12.5a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 0 1h-8a.5.5 0 0 1-.5-.5z"
+                                    />
+                                </svg>
+                                &nbsp;Others
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><hr class="dropdown-divider" /></li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-3 px-lg-2" href="#">
+                                <svg width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-toggle2-off" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9 11c.628-.836 1-1.874 1-3a4.978 4.978 0 0 0-1-3h4a3 3 0 1 1 0 6H9z" />
+                                    <path fill-rule="evenodd" d="M5 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zm0 1A5 5 0 1 0 5 3a5 5 0 0 0 0 10z" />
+                                </svg>
+                                &nbsp;Blog
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-3 px-lg-2" href="#">
+                                <svg width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-toggle2-off" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9 11c.628-.836 1-1.874 1-3a4.978 4.978 0 0 0-1-3h4a3 3 0 1 1 0 6H9z" />
+                                    <path fill-rule="evenodd" d="M5 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zm0 1A5 5 0 1 0 5 3a5 5 0 0 0 0 10z" />
+                                </svg>
+                                &nbsp;Sing in
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Banner -->
+        <section class="banner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="banner_content">
+                            <p class="banner_sub_title">Are you ready to Learn?</p>
+                            <h1 class="banner_title">Learn With fun on <span>any schedule</span></h1>
+                            <p class="d_content py-3">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Varius blandit facilisis quam netus.
+                            </p>
+                            <a href="#" class="d_btn">get started</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="banner_img">
+                            <img class="img-fluid" src="images/Illustration.png" alt="" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- books -->
+        <section class="books my-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-md-3">
+                        <div class="card">
+                            <div class="card-body text-center py-5">
+                                <img class="img-fluid mb-3" src="images/icons/book.png" alt="book" />
+                                <h2 class="sub_title">1500+ Topic</h2>
+                                <p class="d_content m-0">Learn Anythings</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <div class="card">
+                            <div class="card-body text-center py-5">
+                                <img class="img-fluid mb-3" src="images/icons/note.png" alt="note" />
+                                <h2 class="sub_title">9K+ Test Token</h2>
+                                <p class="d_content m-0">Learn Anythings</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <div class="card">
+                            <div class="card-body text-center py-5">
+                                <img class="img-fluid mb-3" src="images/icons/student.png" alt="student" />
+                                <h2 class="sub_title">2000+ Student</h2>
+                                <p class="d_content m-0">Learn Anythings</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <div class="card">
+                            <div class="card-body text-center py-5">
+                                <img class="img-fluid mb-3" src="images/icons/test.png" alt="book" />
+                                <h2 class="sub_title">9K+ Test Token</h2>
+                                <p class="d_content m-0">Learn Anythings</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- courses -->
+        <section class="courses my-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="books_title">Online Courses</h2>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6 col-md-4">
+                        <div class="card">
+                            <img src="images/psychology1.png" class="card-img-top p-3" alt="psychology1" />
+                            <div class="card-body">
+                                <h5 class="card-title sub_title">Modern Psychology</h5>
+                                <p class="card-text d_content">Designation</p>
+                                <a href="#" class="d_btn2">Buy Course</a>
+                                <div class="post_info d-flex justify-content-between pt-3">
+                                    <a href="#" class="d_content">
+                                        <img src="images/icons/calendar.svg" alt="calendar" class="mr-1" />
+                                        Start 20 April, 2021
+                                    </a>
+                                    <a href="#" class="d_content">
+                                        <img src="images/icons/author.svg" alt="author" class="mr-1" />
+                                        60 seats
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <div class="card">
+                            <img src="images/psychology2.png" class="card-img-top p-3" alt="psychology2" />
+                            <div class="card-body">
+                                <h5 class="card-title sub_title">Modern Psychology</h5>
+                                <p class="card-text d_content">Designation</p>
+                                <a href="#" class="d_btn2">Buy Course</a>
+                                <div class="post_info d-flex justify-content-between pt-3">
+                                    <a href="#" class="d_content">
+                                        <img src="images/icons/calendar.svg" alt="calendar" class="mr-1" />
+                                        Start 20 April, 2021
+                                    </a>
+                                    <a href="#" class="d_content">
+                                        <img src="images/icons/author.svg" alt="author" class="mr-1" />
+                                        60 seats
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <div class="card">
+                            <img src="images/psychology3.png" class="card-img-top p-3" alt="psychology3" />
+                            <div class="card-body">
+                                <h5 class="card-title sub_title">Modern Psychology</h5>
+                                <p class="card-text d_content">Designation</p>
+                                <a href="#" class="d_btn2">Buy Course</a>
+                                <div class="post_info d-flex justify-content-between pt-3">
+                                    <a href="#" class="d_content">
+                                        <img src="images/icons/calendar.svg" alt="calendar" class="mr-1" />
+                                        Start 20 April, 2021
+                                    </a>
+                                    <a href="#" class="d_content">
+                                        <img src="images/icons/author.svg" alt="author" class="mr-1" />
+                                        60 seats
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonial -->
+        <section class="testimonial my-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="books_title">Testimonial</h2>
+                </div>
+                <div class="row">
+                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="client_info">
+                                    <img src="images/team1.png" class="client_photo" alt="team1" />
+                                    <p class="client_review">
+                                        There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly
+                                        believable.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="client_info">
+                                    <img src="images/team2.png" class="client_photo" alt="team2" />
+                                    <p class="client_review">
+                                        There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly
+                                        believable.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="client_info">
+                                    <img src="images/team3.png" class="client_photo" alt="team3" />
+                                    <p class="client_review">
+                                        There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly
+                                        believable.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer Widgets -->
+        <footer>
+        	<div class="container">
+        		<div class="row">
+            		<div class="col-md-12 col-xl-5">
+            			<div class="about_us">
+            				<p>Millions of people of all ages and from around the world are improving their lives with us</p>
+            			</div>
+            		</div>
+            		<div class="col-md-12 col-xl-7">
+            			<div class="footer_menu_area">
+            				<div class="footer_menu">
+                                <h4>course</h4>
+                                <ul class="nav flex-column">
+                                    <li><a href="#">Graphic Design</a></li>
+                                    <li><a href="#">Web Design</a></li>
+                                    <li><a href="#">Business</a></li>
+                                    <li><a href="#">marketing</a></li>
+                                    <li><a href="#">Engineering</a></li>
+                                </ul>
+                            </div>
+                            <div class="footer_menu">
+                                <h4>course</h4>
+                                <ul class="nav flex-column">
+                                    <li><a href="#">Graphic Design</a></li>
+                                    <li><a href="#">Web Design</a></li>
+                                    <li><a href="#">Business</a></li>
+                                    <li><a href="#">marketing</a></li>
+                                    <li><a href="#">Engineering</a></li>
+                                </ul>
+                            </div>
+                            <div class="footer_menu">
+                                <h4>course</h4>
+                                <ul class="nav flex-column">
+                                    <li><a href="#">Graphic Design</a></li>
+                                    <li><a href="#">Web Design</a></li>
+                                    <li><a href="#">Business</a></li>
+                                    <li><a href="#">marketing</a></li>
+                                    <li><a href="#">Engineering</a></li>
+                                </ul>
+                            </div>
+            			</div>
+            		</div>
+        		</div>
+                <div class="row">
+                    <div class="container">
+                        <div class="copyright_text">
+                        <p>Copyright © 2020 Rokomari.com</p>
+                    </div>
+                    </div>
+                </div>
+        	</div>
+        </footer>
+        <!-- js file enqueue -->
+        <script src="js/bootstrap.bundle.min.js"></script>
+
+        <!-- bootstrap bundle cdn -->
+        <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
+    </script> -->
+
+        <script src="js/script.js"></script>
+    </body>
+</html>
